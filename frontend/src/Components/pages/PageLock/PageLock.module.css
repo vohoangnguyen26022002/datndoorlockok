@@ -1,0 +1,113 @@
+.lock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  /* margin: 50px auto; */
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f8ff; 
+  border: 2px solid #87cefa; 
+}
+
+.lock-container::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -25%;
+  width: 200%;
+  height: 200%;
+  background: rgba(0, 0, 255, 0.1);
+  animation: pulseBackground 4s infinite ease-in-out;
+  border-radius: 50%;
+}
+
+@keyframes pulseBackground {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.lock-icon {
+  font-size: 72px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.lock-icon:hover {
+  transform: rotate(360deg); /* Rotates icon on hover */
+}
+
+.lock-status {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4b0082; /* Deep purple */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.unlock-button {
+  background: linear-gradient(45deg, #ff6f61, #ff6347); /* Gradient effect */
+  color: white;
+  padding: 18px 36px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer; /* Đảm bảo có cursor pointer */
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* Đảm bảo vị trí không bị chặn */
+  z-index: 10; /* Đảm bảo button hiển thị trên các phần tử khác */
+}
+
+.unlock-button:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.unlock-button:hover {
+  background: linear-gradient(45deg, #ff8c00, #ff6347);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.unlock-button:active {
+  transform: translateY(2px);
+}
+
+
+.permission-message {
+  color: #ff6347; /* Red-orange color */
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

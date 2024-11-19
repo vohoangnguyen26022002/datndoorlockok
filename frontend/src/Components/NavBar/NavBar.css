@@ -1,0 +1,122 @@
+/* Container của Navbar */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4B9CD3, #B0C9E3);
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+  }
+  
+  .navbar-home {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-home:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Phần người dùng */
+  .navbar-user-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  .navbar-user-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-user-icon:hover {
+    color: #feb47b; 
+  }
+  
+  .navbar-dropdown {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  z-index: 999;
+  }
+  
+  .navbar-dropdown-title {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .navbar-dropdown-item {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  }
+  
+  .navbar-dropdown-item:hover {
+    background-color: #6a5d7b; /* Highlight dropdown items with a muted purple */
+  color: white;
+  }
+  
+  .navbar-logout {
+    background-color: #6a5d7b; /* Soft muted purple */
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-logout:hover {
+    background-color: #3b8d99; /* Hover effect with a cool blue color */
+  }
+  
+  /* Styling for login/register links */
+  .navbar-login,
+  .navbar-register {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-login:hover,
+  .navbar-register:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+  }
+  

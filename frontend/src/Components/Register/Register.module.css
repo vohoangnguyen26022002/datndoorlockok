@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Register Container */
+.registerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #E3F2FD, #FAF3E0);
+ /* Xanh dương nhạt */
+  padding: 10px;
+}
+
+.registerTitle {
+  margin-top: 30px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #130909;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+label {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #333;
+  /* margin-bottom: 0px; */
+  margin-top: 15px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 16px;
+  background-color: #1caf08;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f44336;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.input::placeholder {
+  font-size: 16px;
+  color: #424242;
+  font-style: italic;
+  opacity: 0.7;
+  transition: color 0.3s ease;
+}
+
+.input:focus::placeholder {
+  color: #b482a4;
+}

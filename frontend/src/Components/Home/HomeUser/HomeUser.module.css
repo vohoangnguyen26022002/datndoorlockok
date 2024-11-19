@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .lockPageUser-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: linear-gradient(135deg, #003366, #C0C0C0); /* Xanh dương đậm + Bạc */
+   padding: 20px; 
+   overflow: hidden;
+  }
+  
+  .lockPageUser-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .lockPageUser-container .page-lock {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .lockPageUser-container {
+      padding: 15px;
+    }
+    .lockPageUser-container h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lockPageUser-container {
+      padding: 10px;
+    }
+    .lockPageUser-container h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
+
+  
